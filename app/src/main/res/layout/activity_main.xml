@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="209dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.larswerkman.holocolorpicker.SVBar
+        android:id="@+id/svbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/picker"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/picker"
+        app:layout_constraintTop_toBottomOf="@+id/picker" />
+
+    <com.larswerkman.holocolorpicker.OpacityBar
+        android:id="@+id/opacitybar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/saturationbar"
+        app:layout_constraintStart_toStartOf="@+id/saturationbar"
+        app:layout_constraintTop_toBottomOf="@+id/saturationbar" />
+
+    <com.larswerkman.holocolorpicker.SaturationBar
+        android:id="@+id/saturationbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/svbar"
+        app:layout_constraintStart_toStartOf="@+id/svbar"
+        app:layout_constraintTop_toBottomOf="@+id/svbar" />
+
+    <com.larswerkman.holocolorpicker.ValueBar
+        android:id="@+id/valuebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/opacitybar"
+        app:layout_constraintStart_toStartOf="@+id/opacitybar"
+        app:layout_constraintTop_toBottomOf="@+id/opacitybar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Color Picker"
+        app:layout_constraintBottom_toTopOf="@+id/picker"
+        app:layout_constraintEnd_toEndOf="@+id/picker"
+        app:layout_constraintStart_toStartOf="@+id/picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="44dp"
+        android:text="Saturation Bar"
+        app:layout_constraintEnd_toEndOf="@+id/svbar"
+        app:layout_constraintStart_toStartOf="@+id/svbar"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Opacity Bar"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Value Bar"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Sv Bar"
+        app:layout_constraintBottom_toTopOf="@+id/svbar"
+        app:layout_constraintEnd_toEndOf="@+id/picker"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/picker" />
+
+    <TextView
+        android:id="@+id/tv_renkne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="renk"
+        app:layout_constraintEnd_toEndOf="@+id/valuebar"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/valuebar"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</android.support.constraint.ConstraintLayout>
